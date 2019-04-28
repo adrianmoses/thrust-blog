@@ -50,6 +50,24 @@ const PostContent = styled.div`
   margin-top: 4rem;
 `
 
+const MCEmbedSignup = styled.div`
+  clear: left;
+  font-size: 14px;
+  margin-top: 50px;
+`
+
+const MCEmbedSignUpScroll = styled.div`
+  & > label {
+    display: block;
+  }
+  & > .clear {
+    margin-top: 20px;
+    & > input {
+      cursor: pointer;
+    }
+  }
+`
+
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {
   const post = postNode.frontmatter
 
@@ -74,6 +92,28 @@ const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) =>
           <PostContent>
             <MDXRenderer>{postNode.code.body}</MDXRenderer>
           </PostContent>
+          <MCEmbedSignup>
+            <form
+              action="https://thrust.us15.list-manage.com/subscribe/post?u=bee39f4b2acab39adec7e8893&amp;id=32d282b8bc"
+              method="post"
+              id="mc-embedded-subscribe-form"
+              name="mc-embedded-subscribe-form"
+              className="validate"
+              noValidate
+              target="_blank">
+              <MCEmbedSignUpScroll id={'mc_embed_signup_scroll'}>
+                <label htmlFor="mce-EMAIL">Subscribe For Email Updates</label>
+                <input type="email" value="" name="EMAIL" className="email" id="mce-EMAIL" placeholder="email address" required/>
+                {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->*/}
+                <div style={{position: 'absolute', left: '-5000px'}} aria-hidden="true">
+                  <input type="text" name="b_bee39f4b2acab39adec7e8893_32d282b8bc" tabIndex="-1" value=""/>
+                </div>
+                <div className="clear">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+                </div>
+              </MCEmbedSignUpScroll>
+            </form>
+          </MCEmbedSignup>
           <PrevNext prev={prev} next={next} />
         </Content>
       </Wrapper>
