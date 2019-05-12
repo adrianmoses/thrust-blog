@@ -22,6 +22,7 @@ const fontSize = {
 }
 
 const fontFamily = {
+  dosis: `'Dosis', serif`,
   serif: `'Bitter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', serif`,
   sansSerif: `'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif`,
 }

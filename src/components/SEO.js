@@ -170,6 +170,7 @@ const SEO = props => {
       {article && <script type="application/ld+json">{JSON.stringify(schemaArticle)}</script>}
       <script type="application/ld+json">{JSON.stringify(breadcrumb)}</script>
       <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css" />
+      <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800" rel="stylesheet" />
     </Helmet>
   )
 }

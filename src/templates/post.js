@@ -69,6 +69,7 @@ const MCEmbedSignUpScroll = styled.div`
 `
 
 const Post = ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) => {
+  console.log(postNode)
   const post = postNode.frontmatter
 
   return (
