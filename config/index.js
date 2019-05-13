@@ -7,11 +7,11 @@ module.exports = {
   siteUrl: 'https://blog.thrust.fm', // Domain of your site. No trailing slash!
   siteLanguage: 'en', // Language Tag on <html> element
   siteHeadline: 'Thoughts On Songwriting', // Headline for schema.org JSONLD
-  siteBanner: '/social/banner.jpg', // Your image for og:image tag. You can find it in the /static folder
+  siteBanner: '/social/banner.png', // Your image for og:image tag. You can find it in the /static folder
   favicon: 'src/favicon.png', // Your image for favicons. You can find it in the /src folder
   siteDescription: 'Songwriting Blog By Thrust', // Your site description
   author: 'MarsMoses', // Author for schemaORGJSONLD
-  siteLogo: '/social/logo.png', // Image for schemaORGJSONLD
+  siteLogo: '/social/ThrustOGLogoSmall.png', // Image for schemaORGJSONLD
 
   // siteFBAppID: '123456789', // Facebook App ID - Optional
   userTwitter: '@marsmoses', // Twitter Username - Optional
